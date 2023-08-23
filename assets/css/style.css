@@ -44,7 +44,7 @@ a.button {
 
 
 a.button + a.button {
-    margin-left: 10px; /*space between contact us and follow us*/
+    margin-left: 10px; 
 }
 
 a.button:hover {
@@ -52,7 +52,14 @@ a.button:hover {
     background-color: var(--purple);
     border-color: var(--purple);
 }
+div.menu-icon,
+input[type="checkbox"] {
+    display: none;
+}
 
+nav {
+    display: block;
+}
 
 .container {
     width: 1320px;
@@ -278,7 +285,7 @@ div.intro p {
 }
 
 .button:first-child {
-    margin-left: 0; /* Remove margin for the first button */
+    margin-left: 0; 
 }
 
 
@@ -355,7 +362,7 @@ div.intro p {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    margin-bottom: 20px; /* Adjust margin here to control spacing between divs */
+    margin-bottom: 20px; 
 }
 
 .icons {
@@ -842,13 +849,3 @@ footer .copyright {
 
 
 
-@media screen and (min-width: 766px) {
-    div.menu-icon,
-    input[type="checkbox"] {
-        display: none;
-    }
-
-    nav {
-        display: block;
-    }
-}
