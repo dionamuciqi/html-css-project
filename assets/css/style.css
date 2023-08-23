@@ -143,11 +143,8 @@ header .container{
     display: block;
     width: 100% ;
 }
- div .menu-icon{
-    display: none;
-    font-size: 1.2em;
-    color: var(--purple);
-}
+
+
 
 nav a{
     
@@ -633,8 +630,44 @@ footer .copyright {
         color: var(--purple);
        
     }
-    nav{
+    
+    label i {
+        font-size: 1.5em;
+        color: var(--blue);
+    }
+
+    input[type="checkbox"] {
         display: none;
+    }
+
+    label,
+    input {
+        display: block;
+    }
+
+    .toggle-menu:checked+nav {
+        display: block;
+    }
+
+    .toggle-menu:not(:checked)~nav {
+        display: none;
+    }
+
+    nav {
+        display: none;
+        background-color: #fff;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+    }
+
+    nav,
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
     }
 
     /*Main*/
@@ -803,4 +836,19 @@ footer .copyright {
     }
     
    
+}
+
+
+
+
+
+@media screen and (min-width: 766px) {
+    div.menu-icon,
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
 }
