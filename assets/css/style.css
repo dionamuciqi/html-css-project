@@ -355,7 +355,7 @@ div.intro p {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    margin-bottom: 20px; /* Adjust margin here to control spacing between divs */
+    margin-bottom: 20px; 
 }
 
 .icons {
